@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .neon-white-surface {
+    background: #ffffff;
+    border: 2.5px solid #090d16;
+    box-shadow: 0 0 35px rgba(255, 255, 255, 1), 0 12px 40px rgba(14, 165, 233, 0.15), inset 0 0 25px rgba(255, 255, 255, 0.9);
+  }
+  .neon-white-card {
+    background: #ffffff;
+    border: 2px solid #0f172a;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 1), 0 6px 24px rgba(14, 165, 233, 0.1);
+  }
+  .black-neon-heading {
+    color: #000000;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    text-shadow: 0 0 1px #000000, 0 0 14px rgba(14, 165, 233, 0.25);
+    -webkit-text-stroke: 0.5px #000000;
+  }
+  .black-neon-text {
+    color: #090d16;
+    font-weight: 700;
+    text-shadow: 0 0 0.5px #000000;
+  }
+  .black-border-badge {
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    box-shadow: 0 0 12px rgba(14, 165, 233, 0.2);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0fdfa;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(20, 184, 166, 0.12) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(255, 255, 255, 0.95) 0px, transparent 100%),
+    radial-gradient(at 50% 100%, rgba(14, 165, 233, 0.1) 0px, transparent 50%);
+  min-height: 100vh;
+  color: #0f172a;
+}
